@@ -20,10 +20,6 @@ struct ContentView: View {
             } label: {
                 Text("Load count")
             }
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
         }
         .padding()
     }

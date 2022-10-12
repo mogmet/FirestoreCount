@@ -13,12 +13,12 @@ import FirebaseFirestore
 struct FirestoreCountApp: App {
     init() {
         FirebaseApp.configure()
+        // emulatorを使わない場合は下記をすべてコメントアウトする
         let settings = Firestore.firestore().settings
         settings.host = "localhost:8080"
         settings.isPersistenceEnabled = false
         settings.isSSLEnabled = false
         Firestore.firestore().settings = settings
-
     }
     var body: some Scene {
         WindowGroup {
